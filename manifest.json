@@ -1,27 +1,65 @@
-
 {
   "manifest_version": 3,
-  "name": "Popup Central",
+  "name": "Take a Pawse",
   "version": "1.0",
-  "permissions": ["storage"],
-  "action": {
-    "default_popup": "index.html"
+  "description": "Uma breve descrição do que o Popup Central faz.",
 
+  "icons": {
+    "32": "icon.svg",
+    "48": "icon.svg",
+    "96": "icon.svg",
+    "128": "icon.svg"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "takeapawse@extensions.org",
+      "strict_min_version": "109.0"
+    }
+  },
+
+  "permissions": [
+    "storage",
+    "sessions",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "icon.svg",
+      "32": "icon.svg"
+    },
+
+    "default_popup": "index.html"
   },
 
   "content_scripts": [
-    
     {
       "matches": ["<all_urls>"],
       "js": ["script.js"],
       "run_at": "document_end"
     }
   ],
+
   "web_accessible_resources": [
     {
-      "resources": ["fonts/*", "cats/*/*.gif", "cats/*", "icon.png", "Space_Grotesk/*", "img.png"],
+      "resources": [
+        "cats/*/*.gif",
+        "imgs/*",
+
+        "Space_Grotesk/*.ttf",
+        "Sniglet/*.ttf",
+        "Nunito/*.ttf"
+      ],
       "matches": ["<all_urls>"]
     }
   ]
-  
 }
