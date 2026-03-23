@@ -643,7 +643,7 @@ black_cat_img.style.position = "absolute"
 black_cat_img.style.top = "-54px"
 black_cat_img.style.right = "-25px"
 
-github_link.href = "https://github.com/anthonyygs/extension"
+github_link.href = "https://github.com/anthonyygs/take-a-pawse"
 github_link.textContent = " GitHub"
 github_link.style.color = "#3662c1"
 github_link.style.textDecoration = "underline"
