@@ -1,4 +1,4 @@
-# Take a Pawse, a Firefox extension that aims to reduce mindless scrolling 😽
+# 😽 Take a Pawse, a Firefox extension that aims to reduce mindless scrolling
 
 ![Take a pawse banner, made by Summer Josu](github_imgs/1.png)
 
