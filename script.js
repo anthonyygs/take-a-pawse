@@ -3,9 +3,7 @@
 
 let time_end = false
 let times_closed
-
-const { time_input_storage = 10 } = await browser.storage.local.get("time_input_storage")
-
+let { time_input_storage = 10 } = await browser.storage.local.get("time_input_storage")
 let time_to_count = time_input_storage
 
 const time_input = document.getElementById("time-input")
@@ -305,7 +303,7 @@ let {
 
 const activate_button = document.querySelectorAll(".activate-button");
 
-const social_media_states = {
+const social_media_names = {
   facebook, instagram, tiktok, reddit, youtube, x, discord, linkedin, 
   snapchat, pinterest, threads, whatsapp, telegram, mastodon, twitch, 
   bluesky, messenger
@@ -317,32 +315,26 @@ activate_button.forEach(button => {
   const icon = document.getElementById(`${platform}-icon`);
 
 
-  if (social_media_states[platform] && icon) {
+  if (social_media_names[platform] && icon) {
     button.classList.add("activate_button_clicked");
     icon.style.color = "#152549";
   }
 });
-
-const config = { 
-  instagram, tiktok, reddit, youtube, x, whatsapp, telegram, facebook,
-  discord, linkedin, snapchat, pinterest, threads, mastodon, bluesky, 
-  twitch, messenger 
-};
 
 activate_button.forEach(button => {
   button.addEventListener("click", async () => {
 
     const platform = button.id.replace("-button", "");
     const icon = document.getElementById(`${platform}-icon`);
-    config[platform] = !config[platform];
-    button.classList.toggle("activate_button_clicked", config[platform]);
+    social_media_names[platform] = !config[platform];
+    button.classList.toggle("activate_button_clicked", social_media_names[platform]);
 
     if (icon) {
-      icon.style.color = config[platform] ? "#152549" : "#989898";
+      icon.style.color = social_media_names[platform] ? "#152549" : "#989898";
     }
 
     await browser.storage.local.set({
-      [platform]: config[platform]
+      [platform]: social_media_names[platform]
     });
     
   });
@@ -423,6 +415,14 @@ if (response && response.should_activate === false) {
 } 
 
 if (!siteEncontrado) return;
+
+
+
+
+
+
+
+
 
 
 

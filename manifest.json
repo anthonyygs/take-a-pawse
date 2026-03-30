@@ -14,7 +14,9 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "takeapawse@extensions.org",
-      "strict_min_version": "109.0"
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
 
