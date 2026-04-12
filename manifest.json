@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Take a Pawse",
   "version": "1.0",
-  "description": "Uma breve descrição do que o Popup Central faz.",
+  "description": "",
 
   "icons": {
     "32": "icon.svg",
@@ -56,10 +56,8 @@
       "resources": [
         "cats/*/*.gif",
         "imgs/*",
+        "fonts/*.ttf"
 
-        "Space_Grotesk/*.ttf",
-        "Sniglet/*.ttf",
-        "Nunito/*.ttf"
       ],
       "matches": ["<all_urls>"]
     }
