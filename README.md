@@ -4,7 +4,7 @@ a Firefox extension that helps to reduce mindless scrolling
 
 ![Take a pawse banner, made by Summer Josu](imgs/1.png)
 
-In a time when social media often takes control of our attention, and even our time, this Firefox extension aims to gently remind users when they’re about to open a social media site. It displays a cat reaction every time a “suspect” URL is accessed. Each time the user closes the pop-up by clicking the “X,” the cat’s reaction changes; the more you dismiss it, the more annoyed the cats become…
+In a time when social media often takes control of our attention, and even our time, this Firefox extension aims to remind users when they’re about to open a social media site. It displays a cat reaction every time a “suspect” URL is accessed. Each time the user closes the pop-up by clicking the “X,” the cat’s reaction changes; the more you dismiss it, the more annoyed the cats become…
 
 ![Example 1](imgs/2.png)
 
