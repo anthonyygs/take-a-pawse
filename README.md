@@ -8,7 +8,7 @@ In a time when social media often takes control of our attention, and even our t
 
 ![Example 1](imgs/2.png)
 
-The extension also includes a control panel that lets users customize their experience. You can choose which URLs trigger the pop-up and select your preferred language. Currently, it supports four languages: English, Portuguese, Spanish, and French. If your language isn’t available and you’re able to translate from one of the supported languages, feel free to contribute by adding it to the GitHub repository.
+The extension also includes a control panel that lets users customize their experience. You can choose which URLs trigger the pop-up and select your preferred language. Currently, it supports four languages: English, Portuguese, Spanish, and French.
 
 ![Example 2](imgs/4.png)
 
