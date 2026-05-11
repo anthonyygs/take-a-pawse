@@ -12,4 +12,4 @@ The extension also includes a control panel that lets users customize their expe
 
 ![Example 2](imgs/4.png)
 
-There’s also an optional timer feature that prevents the pop-up from being closed until a set amount of time has passed; helping you pause, breathe, and think twice before diving in.
+There’s also an optional timer feature that prevents the pop-up from being closed until a set amount of time has passed; helping you pause, breathe, and think twice before you start scrolling.
